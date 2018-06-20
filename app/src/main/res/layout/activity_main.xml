@@ -96,10 +96,15 @@
             android:layout_height="wrap_content"
             android:text="The Location of our Array Element:" />
 
-        <TextView
-            android:id="@+id/txtLocationArrayElement"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtLocationArrayElement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </ScrollView>
     </LinearLayout>
 
 </RelativeLayout>

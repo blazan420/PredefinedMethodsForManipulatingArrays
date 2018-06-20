@@ -49,6 +49,15 @@ public class MainActivity extends AppCompatActivity {
         swtEqual.setChecked((isEqual ? true : false));
         swtEqual.setText((isEqual ? " The Values of the arrays are equal" : " not Equal"));
 
+        int arrayElement = Arrays.binarySearch(doubleValuesArray, 2.7);
+        if (arrayElement >= 0) {
+            txtLocationOfArrayElement.setText(String.format("We found 2.7 at element %d" +
+                    " in doubleValuesArray", arrayElement));
+
+        } else {
+            txtLocationOfArrayElement.setText("Couldn't find the value in that element");
+        }
+
 
 
     }
