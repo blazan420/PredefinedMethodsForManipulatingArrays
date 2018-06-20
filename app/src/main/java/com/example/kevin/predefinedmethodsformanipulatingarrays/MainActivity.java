@@ -45,6 +45,12 @@ public class MainActivity extends AppCompatActivity {
         outputTheArrayToTheScreen(integerArray1Copy, txtIntArray1Copy);
 
 
+        boolean isEqual = Arrays.equals(integerArray1, integerArray1Copy);
+        swtEqual.setChecked((isEqual ? true : false));
+        swtEqual.setText((isEqual ? " The Values of the arrays are equal" : " not Equal"));
+
+
+
     }
 
     public void outputTheArrayToTheScreen(int[] array, TextView textView) {
